@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlItem"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@color/main_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+
+    <CheckBox
+        android:id="@+id/cbCheck"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/Text_White"
+        android:button="@drawable/notecheckbox" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/cbCheck"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="파워블로거 Tip 포스팅 방법"
+            android:textColor="@color/item_txt_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:text="2019-06-07 09:02:31"
+            android:textColor="@color/item_txt_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/cbCheck"
+        android:background="@color/item_txt_color" />
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:layout="@layout/settingpreferencecategory"
+        android:title="음성 안내 설정">
+
+        <SwitchPreference
+            android:layout="@layout/settingpreferenceswitcher"
+            android:key="@string/result_voice"
+            android:title="음성 안내"
+            android:summary="인식 결과를 음성으로 알려줍니다."
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settingpreferencedivider"/>
+
+    <PreferenceCategory
+        android:layout="@layout/settingpreferencecategory"
+        android:title="모드 설정">
+
+        <ListPreference
+            android:key="@string/mode_set"
+            android:entries="@array/array_setting_mode"
+            android:entryValues="@array/array_setting_mode"
+            android:summary="AI 모드"
+            android:title="기본 인식모드"
+            android:defaultValue="AI 모드"/>
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settingpreferencedivider"/>
+
+    <PreferenceCategory
+        android:layout="@layout/settingpreferencecategory"
+        android:title="메뉴 설정">
+
+        <MultiSelectListPreference
+            android:enabled="true"
+            android:entries="@array/array_setting_menu"
+            android:entryValues="@array/array_setting_menu"
+            android:key="@string/menu_set"
+            android:title="모드 추가/삭제"
+            android:summary="메뉴 화면에서 표시할 모드를 설정합니다."
+            android:negativeButtonText="취소"
+            android:positiveButtonText="확인"/>
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settingpreferencedivider"/>
+
+    <PreferenceCategory
+        android:layout="@layout/settingpreferencecategory"
+        android:title="음성 안내 설정">
+
+        <SwitchPreference
+            android:layout="@layout/settingpreferenceswitcher"
+            android:key="@string/text_recog"
+            android:title="문자 인식 안내"
+            android:summary="음성으로 안내 받으시겠습니까?"
+            android:defaultValue="true"/>
+
+        <SwitchPreference
+            android:layout="@layout/settingpreferenceswitcher"
+            android:key="@string/face_recog"
+            android:title="얼굴 인식 안내"
+            android:summary="음성으로 안내 받으시겠습니까?"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <Preference android:layout="@layout/settingpreferencedivider"/>
+
+    <PreferenceCategory
+        android:layout="@layout/settingpreferencecategory"
+        android:title="기타 설정">
+
+        <SwitchPreference
+            android:layout="@layout/settingpreferenceswitcher"
+            android:key="@string/displaylight"
+            android:title="화면 밝기 낮추기"
+            android:summary="배터리 절약에 도움이 됩니다."
+            android:defaultValue="false"
+            android:thumbTint="@color/Text_Yellow"
+            android:track="@color/toolbar_gray"/>
+
+        <EditTextPreference
+            android:summary="메시지를 30초 동안 표시합니다."
+            android:key="@string/message_time"
+            android:title="메시지 시간 설정"
+            android:selectAllOnFocus="true"
+            android:maxLines="1"
+            android:defaultValue="30"
+            android:inputType="number"
+            android:textColor="@color/dialog_st"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

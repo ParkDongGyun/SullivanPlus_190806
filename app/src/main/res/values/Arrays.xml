@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_mode">
+        <item>@string/mode_ai</item>                      <!--1-->
+        <item>@string/mode_text</item>                    <!--2-->
+        <item>@string/mode_face</item>                    <!--3-->
+        <item>@string/mode_image</item>                   <!--4-->
+        <item>@string/mode_color</item>                   <!--5-->
+        <item>@string/mode_light</item>                   <!--6-->
+        <item>@string/mode_magnify</item>                 <!--7-->
+        <item>@string/mode_note</item>                    <!--8-->
+        <item>@string/mode_community</item>               <!--9-->
+        <item>@string/mode_help</item>                    <!--10-->
+        <item>@string/mode_setting</item>                 <!--11-->
+    </string-array>
+
+    <array name="array_mode_draw">
+        <item>@drawable/menu_ai</item>
+        <item>@drawable/menu_text</item>
+        <item>@drawable/menu_face</item>
+        <item>@drawable/menu_image</item>
+        <item>@drawable/menu_color</item>
+        <item>@drawable/menu_light</item>
+        <item>@drawable/menu_glasses</item>
+        <item>@drawable/menu_seenote</item>
+        <item>@drawable/menu_community</item>
+        <item>@drawable/menu_helper</item>
+        <item>@drawable/menu_setting</item>
+    </array>
+
+
+
+
+    <string-array name="array_addition">
+        <item>@string/addition_call</item>                      <!--1-->
+        <item>@string/addition_flash_on</item>                  <!--2-->
+        <item>@string/addition_dcim</item>                      <!--3-->
+        <item>@string/addition_note</item>                      <!--4-->
+        <item>@string/addition_share</item>                     <!--5-->
+        <item>@string/addition_auto</item>                      <!--6-->
+        <item>@string/addition_color_one</item>                 <!--7-->
+        <item>@string/addition_reverse_on</item>                <!--8-->
+    </string-array>
+
+    <array name="array_addition_draw">
+        <item>@drawable/addition_call</item>
+        <item>@drawable/addition_flashon</item>
+        <item>@drawable/addition_picture</item>
+        <item>@drawable/addition_save</item>
+        <item>@drawable/addition_share</item>
+        <item>@drawable/addition_auto</item>
+        <item>@drawable/addition_color_one</item>
+        <item>@drawable/addition_banjeon</item>
+    </array>
+
+    <array name="array_addition_text_2">
+        <item>@string/addition_call</item>
+        <item>@string/addition_flash_off</item>
+        <item>@string/addition_dcim</item>
+        <item>@string/addition_note</item>
+        <item>@string/addition_share</item>
+        <item>@string/addition_color_one</item>
+        <item>@string/addition_reverse_off</item>
+    </array>
+    <array name="array_addition_draw_2">
+        <item>@drawable/addition_call</item>
+        <item>@drawable/addition_flashoff</item>
+        <item>@drawable/addition_picture</item>
+        <item>@drawable/addition_save</item>
+        <item>@drawable/addition_share</item>
+        <item>@drawable/addition_color_one</item>
+        <item>@drawable/addition_banjeon</item>
+    </array>
+
+
+    <string-array name="array_community_items">
+        <item>@string/community_item1</item>
+        <item>@string/community_item2</item>
+        <item>@string/community_item3</item>
+    </string-array>
+
+    <string-array name="array_help_items">
+        <item>@string/help_item1</item>
+        <item>@string/help_item2</item>
+        <item>@string/help_item3</item>
+        <item>@string/help_item4</item>
+        <item>@string/help_item5</item>
+        <item>@string/help_item6</item>
+    </string-array>
+
+
+    <string-array name="array_toolbar_name">
+        <item>@string/toolbar_save</item>
+        <item>@string/toolbar_delete</item>
+        <item>@string/toolbar_share</item>
+    </string-array>
+
+    <string-array name="array_setting_mode">
+        <item>AI 모드</item>
+        <item>문자 인식</item>
+        <item>얼굴 인식</item>
+        <item>이미지 묘사</item>
+    </string-array>
+
+    <string-array name="array_setting_menu">
+        <item>색상 인식</item>
+        <item>빛 밝기</item>
+        <item>돋보기</item>
+    </string-array>
+
+    <string-array name="array_color_black">
+        <item>black</item>
+        <item>검정색</item>
+    </string-array>
+    <string-array name="array_color_white">
+        <item>white</item>
+        <item>흰색</item>
+    </string-array>
+    <string-array name="array_color_darkgray">
+        <item>darkgray</item>
+        <item>짙은 회색</item>
+    </string-array>
+    <string-array name="array_color_gray">
+        <item>gray</item>
+        <item>회색</item>
+    </string-array>
+    <string-array name="array_color_plum">
+        <item>plum</item>
+        <item>자주색</item>
+    </string-array>
+    <string-array name="array_color_darkred">
+        <item>darkred</item>
+        <item>짙은 빨간색</item>
+    </string-array>
+    <string-array name="array_color_red">
+        <item>red</item>
+        <item>빨간색</item>
+    </string-array>
+    <string-array name="array_color_orange">
+        <item>orange</item>
+        <item>주황색</item>
+    </string-array>
+    <string-array name="array_color_yellow">
+        <item>yellow</item>
+        <item>노란색</item>
+    </string-array>
+    <string-array name="array_color_yellowgreen">
+        <item>yellowgreen</item>
+        <item>황녹색</item>
+    </string-array>
+    <string-array name="array_color_green">
+        <item>green</item>
+        <item>녹색</item>
+    </string-array>
+    <string-array name="array_color_darkgreen">
+        <item>darkgreen</item>
+        <item>짙은 녹색</item>
+    </string-array>
+    <string-array name="array_color_turquoise">
+        <item>turquoise</item>
+        <item>청록색</item>
+    </string-array>
+    <string-array name="array_color_skyblue">
+        <item>skyblue</item>
+        <item>하늘색</item>
+    </string-array>
+    <string-array name="array_color_blue">
+        <item>blue</item>
+        <item>파란색</item>
+    </string-array>
+    <string-array name="array_color_darkblue">
+        <item>darkblue</item>
+        <item>짙은 파란색</item>
+    </string-array>
+    <string-array name="array_color_navy">
+        <item>navy</item>
+        <item>남색</item>
+    </string-array>
+    <string-array name="array_color_violet">
+        <item>violet</item>
+        <item>보라색</item>
+    </string-array>
+    <string-array name="array_color_brown">
+        <item>brown</item>
+        <item>갈색</item>
+    </string-array>
+    <string-array name="array_color_gold">
+        <item>gold</item>
+        <item>금색</item>
+    </string-array>
+    <string-array name="array_color_silver">
+        <item>silver</item>
+        <item>은색</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/listview_bg">
+
+
+<RelativeLayout
+    android:id="@+id/main_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <com.example.sullivanplus.camera.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/curr_mode_txt"
+        android:layout_above="@id/mainbtnlayout">
+    </com.example.sullivanplus.camera.AutoFitTextureView>
+
+    <TextView
+        android:id="@+id/curr_mode_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AI 모드"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingVertical="10sp"
+        android:background="@color/main_bg"
+        android:textColor="@color/Text_White"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background = "@drawable/textview_roundingbox"
+        android:layout_below="@id/curr_mode_txt"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:textSize="21dp"
+        android:text="hello"
+        android:textColor="@color/Text_White"
+        android:visibility="invisible"/>
+    <LinearLayout
+        android:id="@+id/mainbtnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_bg"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/menu_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingVertical="@dimen/main_bottom_icon_padding"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_menu_btn"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/shoot_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="@dimen/main_bottom_icon_padding"
+            android:src="@drawable/main_take_a_picture"
+            android:scaleType="fitCenter"
+            android:layout_weight="2"/>
+        <ImageButton
+            android:id="@+id/addition_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:paddingVertical="@dimen/main_bottom_icon_padding"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_addition_btn"
+            android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menu_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listview_bg"
+        android:paddingBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone">
+    </androidx.recyclerview.widget.RecyclerView>
+    <!--<GridView
+        android:id="@+id/menu_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listview_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:numColumns="3"
+        android:paddingBottom="40dp"
+        ></GridView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

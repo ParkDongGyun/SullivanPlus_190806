@@ -1,0 +1,118 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/main_bg</item>
+        <item name="colorPrimaryDark">@color/dialog_st</item>
+        <item name="colorAccent">@color/dialog_st</item>
+
+        <item name="android:textColorPrimary">@color/toolbar_white</item>
+        <item name="android:textColorSecondary">@color/select_sullivan_color</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Dialog</item>
+        <!--<item name="android:switchPreferenceStyle">@style/AppTheme.switch</item>-->
+    </style>
+
+    <style name="FullScreenTheme_white" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.OverFlow</item>
+        <item name="actionMenuTextColor">@color/toolbar_white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="FullScreenTheme_gray" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.OverFlow</item>
+        <item name="actionMenuTextColor">@color/toolbar_gray</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Dialog</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@color/dialog_bg</item>
+        <item name="android:button">@color/dialog_st</item>
+        <item name="android:positiveButtonText">@color/dialog_st</item>
+        <item name="android:negativeButtonText">@color/dialog_st</item>
+        <item name="android:textColor">@color/dialog_st</item>
+        <item name="android:textColorSecondary">@color/dialog_st</item>
+        <item name="android:textColorAlertDialogListItem">@color/dialog_st</item>
+        <item name="android:textColorPrimary">@color/dialog_st</item>
+        <item name="android:thumbTint">@color/Text_Yellow</item>
+        <item name="editTextColor">@color/dialog_st</item>
+        <item name="colorAccent">@color/dialog_st</item>
+        <item name="android:colorAccent">@color/dialog_st</item>
+    </style>
+    <style name="AppTheme.switch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/Text_Yellow</item>
+        <item name="colorSwitchThumbNormal">@color/Text_Yellow</item>
+        <item name="android:colorFocusedHighlight">@color/toolbar_white</item>
+        <item name="android:colorForeground">@color/toolbar_gray</item>
+    </style>
+
+
+
+    <style name="AppTheme.OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/Text_White</item>
+    </style>
+
+    <style name="AppThemePreference" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.OverFlow</item>
+        <item name="actionMenuTextColor">@color/main_bg</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:alertDialogTheme">@style/AppTheme.Dialog</item>
+    </style>
+<!--
+
+    &lt;!&ndash;                             프리퍼런스 스타일                                              &ndash;&gt;
+    <style name="Preference">
+        <item name="layout">@layout/activity_setting</item>
+    </style>
+
+    <style name="PreferenceFragment">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="Preference.Information">
+        <item name="android:layout">@android:layout/preference_information</item>
+        <item name="android:enabled">false</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+
+    <style name="Preference.PreferenceScreen">
+    </style>
+
+    <style name="Preference.Category">
+        <item name="android:layout">@android:layout/preference_category</item>
+        &lt;!&ndash; The title should not dim if the category is disabled, instead only the preference children should dim. &ndash;&gt;
+        <item name="android:shouldDisableView">false</item>
+        <item name="android:selectable">false</item>
+    </style>
+
+
+    <style name="Preference.CheckBoxPreference">
+        <item name="android:widgetLayout">@android:layout/preference_widget_checkbox</item>
+    </style>
+-->
+
+    <!--<style name="Preference.SwitchPreferenceCompat">
+        <item name="android:widgetLayout">@android:layout/preference_widget_switch_compat</item>
+        <item name="android:switchTextOn">@string/v7_preference_on</item>
+        <item name="android:switchTextOff">@string/v7_preference_off</item>
+    </style>-->
+
+    <!--<style name="Preference.DialogPreference">
+        <item name="android:positiveButtonText">@android:string/ok</item>
+        <item name="android:negativeButtonText">@android:string/cancel</item>
+    </style>
+
+    <style name="Preference.DialogPreference.EditTextPreference">
+        <item name="android:dialogLayout">@android:layout/preference_dialog_edittext</item>
+    </style>
+
+    <style name="PreferenceFragmentList">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>-->
+</resources>

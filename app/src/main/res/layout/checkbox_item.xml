@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:paddingTop="8dp"
+    android:background="@color/main_bg">
+
+    <CheckBox
+        android:id="@+id/list_item_checkbox"
+        android:button="@drawable/notecheckbox"
+
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/Text_White" />
+
+        <LinearLayout
+            android:id="@+id/note_detail_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/note_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingHorizontal="8dp"
+                android:textStyle="bold"
+                android:text="파워블로거 Tip 포스팅 방법"
+                android:textColor="@color/item_txt_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:paddingHorizontal="8dp"
+                android:text="2019-06-07 09:02:31"
+                android:textColor="@color/item_txt_color"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/item_txt_color"/>
+            </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>
