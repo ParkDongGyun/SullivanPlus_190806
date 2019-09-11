@@ -1795,6 +1795,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 						count++;
 				}
 				if (count == 0) {
+					Log.i("test","test");
 					MenuItem menuItem = new MenuItem(modeArr_name[i], ContextCompat.getDrawable(getApplicationContext(), drawableTypedArray.getResourceId(i, 0)));
 					menuItemArrayList.add(menuItem);
 				} else
